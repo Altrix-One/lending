@@ -18,7 +18,15 @@ audit_trail_doctypes = [
 ]
 
 voucher_subtypes = "lending.loan_management.doctype.loan.loan.get_voucher_subtypes"
-
+add_to_apps_screen = [
+	{
+		"name": "lending",
+		"logo": "/assets/lending/lending.png",
+		"title": "Lending",
+		"route": "app/lending",
+		"has_permission": "lending.api.check_app_permission",
+	}
+]
 # Includes in <head>
 # ------------------
 
